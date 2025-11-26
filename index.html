@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=800 height=600 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=100% height=100% tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -57,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/TropicOfDinosaurGamePoemsNew.loader.js";
+      var loaderUrl = buildUrl + "/TropicOfDinosaurGamePoems.loader.js";
       var config = {
-        dataUrl: buildUrl + "/TropicOfDinosaurGamePoemsNew.data.br",
-        frameworkUrl: buildUrl + "/TropicOfDinosaurGamePoemsNew.framework.js.br",
-        codeUrl: buildUrl + "/TropicOfDinosaurGamePoemsNew.wasm.br",
+        dataUrl: buildUrl + "/TropicOfDinosaurGamePoems.data.br",
+        frameworkUrl: buildUrl + "/TropicOfDinosaurGamePoems.framework.js.br",
+        codeUrl: buildUrl + "/TropicOfDinosaurGamePoems.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Bulboka",
         productName: "Tropic of Dinosaur",
@@ -103,8 +103,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "800px";
-        canvas.style.height = "600px";
+        canvas.style.width = "100%";
+        canvas.style.height = "100%";
       }
 
       loadingBar.style.display = "block";
